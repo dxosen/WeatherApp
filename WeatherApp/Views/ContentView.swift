@@ -20,7 +20,7 @@ struct ContentView: View {
                 
                 
                 if let weather = weather {
-                    Text("Weather data fetched successfully")
+                    WeatherView(weather: weather)
                 }else{
                     LoadingView()
                         .task{
